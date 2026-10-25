@@ -33,16 +33,18 @@ This project demonstrates Linux system administration concepts for managing user
 7. Record command outputs and screenshots as evidence.
 
 ## 6. Example Commands
-```bash
-sudo groupadd projectteam
-sudo useradd -m employee1
-sudo usermod -aG projectteam employee1
-sudo mkdir -p /opt/employee-access
-sudo chown root:projectteam /opt/employee-access
-sudo chmod 770 /opt/employee-access
-ls -ld /opt/employee-access
-id employee1
-```
+
+sudo groupadd groupname
+sudo useradd username
+sudo usermod -aG groupname username
+sudo mkdir directory name
+sudo chown 770 groupname
+sudo su - username
+ls -l
+cd groupname
+su - username
+exit
+cd ..
 
 These commands are examples. Run them only in a test Linux environment and document the results you actually observe.
 
